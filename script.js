@@ -8,7 +8,7 @@ const BtnDelAll = document.getElementById("delallusers");
 BtnAllusers.addEventListener("click", () => {
   document.getElementById("tbod").textContent = ""
   axios
-    .get("https://expresscrudtask.herokuapp.com//users")
+    .get("https://expresscrudtask.herokuapp.com/users")
     .then((response) => {
       dataUsers = response.data;
       //console.log(dataUsers);
