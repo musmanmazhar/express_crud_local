@@ -7,7 +7,7 @@ import cors from "cors";
 const app = express();
 
 //Environment Variable is saved on environment which is secret path and it also helps to run on heroku
-const port = process.env.port || 404;
+const port = process.env.PORT || 404;
 
 let users = [];
 //.Use is a middleware (o give request or response)
